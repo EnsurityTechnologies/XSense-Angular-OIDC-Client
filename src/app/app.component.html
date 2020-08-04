@@ -1,0 +1,11 @@
+
+<!-- nav -->
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark justify-content-between"  *ngIf="currentUser">
+      <span class="navbar-brand">Identity Access Management SPA Demo Client</span>
+        <button style="color: white;" class="btn btn-outline-success my-2 my-sm-0"(click)="logout()">Logout</button>
+    </nav>
+<!-- main app container -->
+<div class="container">
+     <router-outlet></router-outlet>
+</div>
+

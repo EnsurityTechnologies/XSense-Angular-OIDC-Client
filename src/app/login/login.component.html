@@ -1,0 +1,20 @@
+<div class="container" style="padding-top: 30px;">
+    <div class="loginForm">
+        <h2 class="formTitle">Login with SPA</h2>
+        <form novalidate [formGroup]="myform" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" formControlName="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" formControlName="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="loginwithIAM">
+            <p><span>(OR)</span></p>
+            <button type="button" class="btn btn-warning" (click)="LoginWithIDP()">Login With XSense</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+.loginForm
+{
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid #cdcdcd;
+    padding: 40px;
+}
+.formTitle
+{
+    text-align: center;
+}
+.loginwithIAM
+{
+    text-align: center;
+}
+
+.protectedRouting
+{
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    padding: 40px;
+}

@@ -1,9 +1,14 @@
 # Angular OpenID Connect XSense Integration
 
-## Ensurity Sample Angular Project
+### Pre-requisites
 
-- Download the XSense_Angular_OIDC_Sample_App.zip
-- Extract zip file contents
+* GIT command line
+* Supported IDE (ex: Visual Studio Code)
+
+### Installation
+
+- ```git clone https://github.com/EnsurityTechnologies/XSense-Angular-OIDC-Client.git```
+- Navigate to the folder
 - Open the folder contents in any IDE (ex: Visual Studio Code)
 
 ## Change OpenID Client Settings

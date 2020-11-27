@@ -49,11 +49,11 @@ export class AuthService {
 
 export function getClientSettings(): UserManagerSettings {
   return {
-      authority: 'https://geojit.ensurityzts.com/',
+      authority: 'https://<<tenant>>.ensurityzts.com/',
       client_id: 'angular_spa',
       client_secret:'fd543361-24ab-469d-ae85-34cb13685547',
-      redirect_uri: 'https://xsense-demo-sp.azurewebsites.net/auth-callback',
-      post_logout_redirect_uri: 'https://xsense-demo-sp.azurewebsites.net/',
+      redirect_uri: 'https://<<application URL>>/auth-callback',
+      post_logout_redirect_uri: 'https://<<application redirection URL>>/',
       response_type: "id_token",
       scope: "openid profile email phone",
       filterProtocolClaims: true,

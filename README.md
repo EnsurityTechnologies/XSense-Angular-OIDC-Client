@@ -17,13 +17,23 @@
 
 - The following values has to be changed as per the hosted web app.
 
-- The **sample** data is as follows
+- The **template** data is as follows
+  ```
+  authority: 'https://<<tenant>>.ensurityzts.com/',
+  client_id: '<<Client ID>>',
+  client_secret:'<<GUID>>',
+  redirect_uri: 'https://<<application URL>>/auth-callback',
+  post_logout_redirect_uri: 'https://<<application redirection URL>>/',
+  ```
 
-  ` client_id: 'angular_spa',
+- The **sample** data is as follows
+  ```
+  client_id: 'angular_spa',
   client_secret:'fd543361-24ab-469d-ae85-34cb13685547',
   redirect_uri: 'https://xsense-demo-sp.azurewebsites.net/auth-callback',
-  post_logout_redirect_uri: 'https://xsense-demo-sp.azurewebsites.net/',`
-
+  post_logout_redirect_uri: 'https://xsense-demo-sp.azurewebsites.net/',
+  ```
+  
 ## Update Routing (if required)
 
 - Navigate to `\src\app\app-routing.module.ts`

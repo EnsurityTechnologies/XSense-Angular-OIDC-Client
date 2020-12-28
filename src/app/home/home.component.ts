@@ -10,20 +10,13 @@ export class HomeComponent implements OnInit {
   response: any;
   constructor(private authService:AuthService, private http: HttpClient) { }
 
+  public _userProfile: any;
   ngOnInit() {
     this.getAllUsers();
   }
   
   getAllUsers()
   {
-    let headers = new HttpHeaders({
-      'Authorization': this.authService.getAuthorizationHeaderValue(),
-       responseType: 'text'
-    })
-
-    this.http.get<any>("/api/Token/Users", { headers: headers })
-      .subscribe(
-        response => this.response =response,
-        err => console.log("angular is trash"));
-   }
+     this._userProfile = JSON.stringify(this.authService.getClaims());
+  }
 }

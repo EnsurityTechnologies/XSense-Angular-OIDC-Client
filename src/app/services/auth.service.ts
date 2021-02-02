@@ -50,7 +50,7 @@ export class AuthService {
 export function getClientSettings(): UserManagerSettings {
   return {
       authority: 'https://ensurity.ensurityzts.com/',
-      client_id: 'angular_spa_psr',
+      client_id: 'angular_spa_psr1',
       client_secret:'fd543360-24ab-469d-ae85-34cb13685546',
       redirect_uri: 'http://localhost:4200/auth-callback',
       post_logout_redirect_uri: 'http://localhost:4200/',
